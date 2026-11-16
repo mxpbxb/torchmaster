@@ -1,0 +1,14 @@
+{
+  "block.torchmaster.megatorch": "\u8d85\u7ea7\u706b\u628a",
+  "block.torchmaster.megatorch.tooltip": "\u5728\u8fd9\u4e2a\u706b\u628a\u5468\u56f4\u4e00\u5927\u7247\u533a\u57df\u90fd\u4e0d\u4f1a\u5237\u51fa\u654c\u5bf9\u602a\u7269",
+  "block.torchmaster.dreadlamp": "\u6050\u60e7\u706f",
+  "block.torchmaster.dreadlamp.tooltip": "\u5728\u8fd9\u4e2a\u706f\u7b3c\u5468\u56f4\u4e00\u5927\u7247\u533a\u57df\u90fd\u4e0d\u4f1a\u5237\u65b0\u51fa\u975e\u654c\u5bf9\u751f\u7269\uff0c\u6bd4\u5982\u9c7f\u9c7c\u3002\u8759\u8760\u4ee5\u53ca\u8c79\u732b",
+  "block.torchmaster.feral_flare_lantern": "\u91ce\u706b\u706f\u7b3c",
+  "block.torchmaster.feral_flare_lantern.tooltip": "\u5149\u8292\u5728\u65e0\u5f62\u4e2d\u8513\u5ef6\u5230\u5468\u56f4",
+  "block.torchmaster.invisible_light": "\u65e0\u5f62\u5149\u8292",
+  "item.torchmaster.frozen_pearl": "\u971c\u51bb\u73cd\u73e0",
+  "item.torchmaster.frozen_pearl.tooltip": "\u6e05\u9664\u91ce\u706b\u706f\u7b3c\u53d1\u51fa\u7684\u65e0\u5f62\u5149\u8292",
+  "command.torchmaster.torch_list.completed": "\u672cmod\u706b\u628a\u4f4d\u7f6e\u5df2\u88ab\u5bfc\u51fa\u5230\u65e5\u5fd7\u6587\u4ef6",
+  "command.torchmaster.entity_dump.completed": "\u6e38\u620f\u5df2\u6ce8\u518c\u5b9e\u4f53\u5217\u8868\u5df2\u88ab\u5bfc\u51fa\u5230\u65e5\u5fd7\u6587\u4ef6",
+  "itemGroup.torchmaster": "\u4e0d\u6b62\u706b\u628a"
+}

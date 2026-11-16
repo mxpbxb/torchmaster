@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " I ",
+    "IEI",
+    " I "
+  ],
+  "key": {
+    "E": "minecraft:ender_pearl",
+    "I": [
+      "minecraft:ice",
+      "minecraft:packed_ice"
+    ]
+  },
+  "result": {
+    "id": "torchmaster:frozen_pearl"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "template": "minecraft:light",
+  "properties": {
+    "light": 15
+  },
+  "shapes": {
+    "default": []
+  },
+  "collision_shapes": {
+    "default": []
+  },
+  "item": false
+}

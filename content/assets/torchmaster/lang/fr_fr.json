@@ -1,0 +1,14 @@
+{
+  "block.torchmaster.megatorch": "Mega Torche",
+  "block.torchmaster.megatorch.tooltip": "Emp\u00eache l'apparition naturelle de monstres hostiles dans un grand rayon autour de la torche",
+  "block.torchmaster.dreadlamp": "Lampe d'effroi",
+  "block.torchmaster.dreadlamp.tooltip": "Emp\u00eache l'apparition naturelle d'animaux passifs comme les calmars, les chauves-souris ou les ocelots dans un grand rayon autour de la lampe",
+  "block.torchmaster.feral_flare_lantern": "Lanterne flamboyante sauvage",
+  "block.torchmaster.feral_flare_lantern.tooltip": "Place des lumi\u00e8res invisibles",
+  "block.torchmaster.invisible_light": "Lumi\u00e8re invisible",
+  "item.torchmaster.frozen_pearl": "Perle gel\u00e9e",
+  "item.torchmaster.frozen_pearl.tooltip": "Efface les lumi\u00e8res r\u00e9siduelles d'une lanterne flamboyante sauvage",
+  "command.torchmaster.torch_list.completed": "Les torches ont \u00e9t\u00e9 sauvegard\u00e9es dans le fichier journal",
+  "command.torchmaster.entity_dump.completed": "Les entit\u00e9s ont \u00e9t\u00e9 sauvegard\u00e9es dans le fichier journal",
+  "itemGroup.torchmaster": "Torchmaster"
+}

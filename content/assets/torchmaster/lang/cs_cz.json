@@ -1,0 +1,14 @@
+{
+  "block.torchmaster.megatorch": "Obrovsk\u00e1 lou\u010d",
+  "block.torchmaster.megatorch.tooltip": "Zabra\u0148uje p\u0159\u00edrodn\u00edmu spawnov\u00e1n\u00ed zl\u00fdch p\u0159\u00ed\u0161er ve velk\u00e9m rozsahu kolem lou\u010de",
+  "block.torchmaster.dreadlamp": "Stra\u0161n\u00e1 lampa",
+  "block.torchmaster.dreadlamp.tooltip": "Zabra\u0148uje p\u0159\u00edrodn\u00edmu spawnov\u00e1n\u00ed p\u0159\u00e1telsk\u00fdch zv\u00ed\u0159at jako jsou olihn\u011b, netop\u00fd\u0159i nebo oceloti ve velk\u00e9m rozsahu kolem lampy",
+  "block.torchmaster.feral_flare_lantern": "Lucerna divok\u00fdch sv\u011btlic",
+  "block.torchmaster.feral_flare_lantern.tooltip": "Pokl\u00e1d\u00e1 neviditeln\u00e1 sv\u011btla",
+  "block.torchmaster.invisible_light": "Neviditeln\u00e9 sv\u011btlo",
+  "item.torchmaster.frozen_pearl": "Zmrzl\u00e1 perla",
+  "item.torchmaster.frozen_pearl.tooltip": "Odstran\u00ed zbytkov\u00e1 sv\u011btla z lucerny divok\u00fdch sv\u011btlic",
+  "command.torchmaster.torch_list.completed": "Lou\u010de byly vhozeny do v\u00fdstupn\u00edho souboru",
+  "command.torchmaster.entity_dump.completed": "Entity byly vhozeny do v\u00fdstupn\u00edho souboru",
+  "itemGroup.torchmaster": "Torchmaster"
+}

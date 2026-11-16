@@ -1,0 +1,14 @@
+{
+  "block.torchmaster.megatorch": "Mega pochodnia",
+  "block.torchmaster.megatorch.tooltip": "Zapobiega naturalnemu pojawianiu si\u0119 potwor\u00f3w w du\u017cym zasi\u0119gu dooko\u0142a pochodni",
+  "block.torchmaster.dreadlamp": "Lampa strachu",
+  "block.torchmaster.dreadlamp.tooltip": "Zapobiega naturalnemu pojawianiu si\u0119 zwierz\u0105t w du\u017cym zasi\u0119gu dooko\u0142a lampy",
+  "block.torchmaster.feral_flare_lantern": "Dzika latarnia",
+  "block.torchmaster.feral_flare_lantern.tooltip": "Stawia niewidzialne \u015bwiate\u0142ka",
+  "block.torchmaster.invisible_light": "Niewidzialne \u015bwiate\u0142ko",
+  "item.torchmaster.frozen_pearl": "Zamro\u017cona per\u0142a",
+  "item.torchmaster.frozen_pearl.tooltip": "Usuwa niewidzialne \u015bwiate\u0142ka pozosta\u0142e po zniszczeniu latarni",
+  "command.torchmaster.torch_list.completed": "Pochodnie zosta\u0142y zrzucone do pliku log",
+  "command.torchmaster.entity_dump.completed": "Istoty zosta\u0142y zrzucone do pliku log",
+  "itemGroup.torchmaster": "Torchmaster"
+}

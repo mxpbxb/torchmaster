@@ -1,0 +1,14 @@
+{
+  "block.torchmaster.megatorch": "\u8d85\u7d1a\u706b\u628a",
+  "block.torchmaster.megatorch.tooltip": "\u4ee5\u706b\u628a\u70ba\u4e2d\u5fc3\uff0c\u5927\u7bc4\u570d\u9632\u6b62\u6575\u5c0d\u751f\u7269\u751f\u6210",
+  "block.torchmaster.dreadlamp": "\u986b\u6144\u71c8",
+  "block.torchmaster.dreadlamp.tooltip": "\u4ee5\u71c8\u70ba\u4e2d\u5fc3\uff0c\u5927\u7bc4\u570d\u9632\u6b62\u88ab\u52d5\u751f\u7269\uff08\u5982\uff1a\u9b77\u9b5a\u3001\u8759\u8760\u3001\u5c71\u8c93\u7b49\uff09\u751f\u6210",
+  "block.torchmaster.feral_flare_lantern": "\u91ce\u7130\u71c8\u7c60",
+  "block.torchmaster.feral_flare_lantern.tooltip": "\u653e\u7f6e\u96b1\u5f62\u7684\u5149\u6e90",
+  "block.torchmaster.invisible_light": "\u7121\u5f62\u5149\u6e90",
+  "item.torchmaster.frozen_pearl": "\u51cd\u5bd2\u73cd\u73e0",
+  "item.torchmaster.frozen_pearl.tooltip": "\u6e05\u9664\u4f86\u81ea\u91ce\u7130\u71c8\u7c60\u6f2b\u6ea2\u51fa\u7684\u5149",
+  "command.torchmaster.torch_list.completed": "\u706b\u628a\u5df2\u88ab\u8f38\u51fa\u70ba Log \u6a94\u6848",
+  "command.torchmaster.entity_dump.completed": "\u5be6\u9ad4\u5df2\u88ab\u8f38\u51fa\u70ba Log \u6a94\u6848",
+  "itemGroup.torchmaster": "\u706b\u628a\u5927\u5e2b"
+}

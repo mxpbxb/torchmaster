@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " I ",
+    "GgG",
+    " I "
+  ],
+  "key": {
+    "I": "minecraft:gold_ingot",
+    "g": "minecraft:glowstone_dust",
+    "G": "minecraft:glass"
+  },
+  "result": {
+    "id": "torchmaster:feral_flare_lantern"
+  }
+}

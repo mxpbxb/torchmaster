@@ -1,0 +1,22 @@
+{
+  "template": "minecraft:end_rod",
+  "properties": {
+    "hardness": 1.0,
+    "explosion_resistance": 1.0,
+    "sounds": "minecraft:lantern",
+    "light": 15
+  },
+  "shapes": {
+    "default": [
+      [
+        0.25,
+        0,
+        0.25,
+        0.75,
+        1,
+        0.75
+      ]
+    ]
+  },
+  "item": true
+}

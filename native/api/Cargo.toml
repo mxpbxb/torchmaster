@@ -1,0 +1,9 @@
+[package]
+name = "mod-torchmaster_native"
+version = "21.1.13"
+edition = "2024"
+license = "MIT"
+
+[dependencies]
+# The launcher points this at the Horizon source it builds the game from.
+horizon-client = { git = "https://github.com/horizon-rust/horizon", rev = "66f3981f522b24c250b21523a70080965b940424" }

@@ -1,0 +1,14 @@
+{
+  "block.torchmaster.megatorch": "\uba54\uac00 \ud683\ubd88",
+  "block.torchmaster.megatorch.tooltip": "\ud1a0\uce58 \uc8fc\ubcc0 \ud070 \ubc18\uacbd\uc5d0\uc11c \uc801\ub300\uc801 \ubaac\uc2a4\ud130\uc758 \uc790\uc5f0 \uc2a4\ud3f0 \ubc29\uc9c0.",
+  "block.torchmaster.dreadlamp": "\ub4dc\ub808\ub4dc \uc870\uba85",
+  "block.torchmaster.dreadlamp.tooltip": "\uc870\uba85 \uc8fc\ubcc0 \ud070 \ubc18\uacbd\uc5d0\uc11c \uce5c\ud654\uc801 \ubaac\uc2a4\ud130\uc758 \uc790\uc5f0 \uc2a4\ud3f0 \ubc29\uc9c0.",
+  "block.torchmaster.feral_flare_lantern": "\ud398\ub7f4 \ud50c\ub808\uc5b4 \ub79c\ud134",
+  "block.torchmaster.feral_flare_lantern.tooltip": "\ud22c\uba85\ud55c \ube5b\uc744 \ube44\ucd98\ub2e4.",
+  "block.torchmaster.invisible_light": "\ud22c\uba85\ud55c \ube5b",
+  "item.torchmaster.frozen_pearl": "\uc5b8 \ud398\ub7f4",
+  "item.torchmaster.frozen_pearl.tooltip": "\ud398\ub7f4 \ud50c\ub808\uc5b4 \ub79c\ud134\uc758 \ube5b\uc744 \uc9c0\uc6b4\ub2e4.",
+  "command.torchmaster.torch_list.completed": "\ub85c\uadf8 \ud30c\uc77c\uc5d0 \ud683\ubd88\uc774 \ub36e\uc5b4\uc4f0\uc5ec\uc84c\uc2b5\ub2c8\ub2e4.",
+  "command.torchmaster.entity_dump.completed": "\uc5d4\ud2f0\ud2f0\uac00 \ub85c\uadf8 \ud30c\uc77c\uc5d0 \ub36e\uc5b4\uc4f0\uc5ec\uc84c\uc2b5\ub2c8\ub2e4.",
+  "itemGroup.torchmaster": "\ud1a0\uce58\ub9c8\uc2a4\ud130"
+}

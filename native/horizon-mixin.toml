@@ -1,0 +1,11 @@
+# Torchmaster for Horizon, built by its launcher: `horizon-launcher native-build`.
+# A port of Torchmaster by Xalcon (MIT). The blocks, items and art are the content mod `torchmaster`.
+[mod]
+id = "torchmaster_native"
+version = "21.1.13-horizon.1"
+
+[compatibility]
+horizon_revision = "1fe4e6fe0252c44efd41d882daee0468389f7d5f"
+
+[api]
+path = "api"
