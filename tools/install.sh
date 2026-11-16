@@ -5,7 +5,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 H=/mnt/c/Users/mxpbx/AppData/Roaming/horizon
 if /mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -Command \
-   "if (Get-CimInstance Win32_Process | Where-Object { \$_.Name -eq 'horizon-client.exe' -or \$_.CommandLine -match 'native-build' }) { exit 0 } else { exit 1 }"; then
+   "if (Get-CimInstance Win32_Process | Where-Object { \$_.Name -eq 'horizon-client.exe' -or (\$_.Name -eq 'horizon-launcher.exe' -and \$_.CommandLine -match 'native-build') }) { exit 0 } else { exit 1 }"; then
   echo "Horizon or a native-build is running: close it first" >&2; exit 1
 fi
 cp "$ROOT/target/torchmaster.hmod" "$H/horizon-mods/torchmaster.hmod"
