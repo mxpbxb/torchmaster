@@ -2,11 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " I ",
+    "MIM",
     "IEI",
-    " I "
+    "MDM"
   ],
   "key": {
+    "M": "arcadiandream:max_point_item",
+    "D": "minecraft:diamond",
     "E": "minecraft:ender_pearl",
     "I": [
       "minecraft:ice",

@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "TTT",
+    "MTM",
     "DLD",
-    "GLG"
+    "MLM"
   ],
   "key": {
-    "T": "minecraft:torch",
+    "M": "arcadiandream:max_point_item",
     "D": "minecraft:diamond",
-    "G": "minecraft:gold_block",
+    "T": "minecraft:torch",
     "L": "#minecraft:logs"
   },
   "result": {

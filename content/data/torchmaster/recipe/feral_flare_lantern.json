@@ -2,14 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " I ",
-    "GgG",
-    " I "
+    "MIM",
+    "DgD",
+    "MIM"
   ],
   "key": {
+    "M": "arcadiandream:max_point_item",
+    "D": "minecraft:diamond",
     "I": "minecraft:gold_ingot",
-    "g": "minecraft:glowstone_dust",
-    "G": "minecraft:glass"
+    "g": "minecraft:glowstone_dust"
   },
   "result": {
     "id": "torchmaster:feral_flare_lantern"

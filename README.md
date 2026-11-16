@@ -23,7 +23,11 @@ A port of [Torchmaster](https://github.com/Xalcon/TorchMaster) by **Xalcon** (MI
 - Lights are tracked in `<world>/torchmaster/lights.tsv`.
 - No range display screen, no lantern settings screen (line of sight is always off, Torchmaster's
   default), no `/torchmaster` command, no flame particles or waterlogging on the torch and lamp.
-- Recipes use vanilla items where Torchmaster used NeoForge convention tags.
+- Every recipe needs four of Arcadian Dream's Max Point Items (`arcadiandream:max_point_item`, the
+  corners) and diamonds, around the heart of Torchmaster's recipe:
+  Mega Torch `MTM/DLD/MLM` (torch, logs), Dread Lamp `MOM/DGD/MBM` (obsidian, glowstone, black dye),
+  Feral Flare Lantern `MIM/DgD/MIM` (gold ingots, glowstone dust), Frozen Pearl `MIM/IEI/MDM`
+  (ice or packed ice, ender pearl). Without the `arcadiandream` mod they can't be crafted.
 - Phantoms are kept out by refusing a new phantom near a torch, which also stops spawn eggs there.
 - A lantern removed by anything but a player (explosion, piston) leaves its lights; the pearl clears them.
 

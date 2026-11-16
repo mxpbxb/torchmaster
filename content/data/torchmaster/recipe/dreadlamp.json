@@ -2,13 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "OOO",
-    "PGP",
-    "OBO"
+    "MOM",
+    "DGD",
+    "MBM"
   ],
   "key": {
+    "M": "arcadiandream:max_point_item",
+    "D": "minecraft:diamond",
     "O": "minecraft:obsidian",
-    "P": "minecraft:glass_pane",
     "G": "minecraft:glowstone",
     "B": "minecraft:black_dye"
   },

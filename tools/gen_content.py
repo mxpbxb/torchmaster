@@ -76,18 +76,24 @@ write(f"{H}/creative_tab/{NS}.json", {
     "items": [f"{NS}:megatorch", f"{NS}:dreadlamp", f"{NS}:feral_flare_lantern", f"{NS}:frozen_pearl"],
 })
 
-# ---- Recipes (Torchmaster's, with vanilla items where it named convention tags) ----
+# ---- Recipes ----
+# Each needs four of Arcadian Dream's Max Point Items (in the corners) and diamonds, around the
+# heart of Torchmaster's own recipe. Without the arcadiandream mod they can't be made.
+MAX_POINT = "arcadiandream:max_point_item"
+
+
 def shaped(pattern, key, result):
+    key = {"M": MAX_POINT, "D": "minecraft:diamond", **key}
     return {"type": "minecraft:crafting_shaped", "category": "misc", "pattern": pattern, "key": key, "result": {"id": result}}
 
 
-write(f"data/{NS}/recipe/megatorch.json", shaped(["TTT", "DLD", "GLG"], {
-    "T": "minecraft:torch", "D": "minecraft:diamond", "G": "minecraft:gold_block", "L": "#minecraft:logs"}, f"{NS}:megatorch"))
-write(f"data/{NS}/recipe/dreadlamp.json", shaped(["OOO", "PGP", "OBO"], {
-    "O": "minecraft:obsidian", "P": "minecraft:glass_pane", "G": "minecraft:glowstone", "B": "minecraft:black_dye"}, f"{NS}:dreadlamp"))
-write(f"data/{NS}/recipe/feral_flare_lantern.json", shaped([" I ", "GgG", " I "], {
-    "I": "minecraft:gold_ingot", "g": "minecraft:glowstone_dust", "G": "minecraft:glass"}, f"{NS}:feral_flare_lantern"))
-write(f"data/{NS}/recipe/frozen_pearl.json", shaped([" I ", "IEI", " I "], {
+write(f"data/{NS}/recipe/megatorch.json", shaped(["MTM", "DLD", "MLM"], {
+    "T": "minecraft:torch", "L": "#minecraft:logs"}, f"{NS}:megatorch"))
+write(f"data/{NS}/recipe/dreadlamp.json", shaped(["MOM", "DGD", "MBM"], {
+    "O": "minecraft:obsidian", "G": "minecraft:glowstone", "B": "minecraft:black_dye"}, f"{NS}:dreadlamp"))
+write(f"data/{NS}/recipe/feral_flare_lantern.json", shaped(["MIM", "DgD", "MIM"], {
+    "I": "minecraft:gold_ingot", "g": "minecraft:glowstone_dust"}, f"{NS}:feral_flare_lantern"))
+write(f"data/{NS}/recipe/frozen_pearl.json", shaped(["MIM", "IEI", "MDM"], {
     "E": "minecraft:ender_pearl", "I": ["minecraft:ice", "minecraft:packed_ice"]}, f"{NS}:frozen_pearl"))
 
 # ---- Loot and tags ----
