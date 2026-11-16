@@ -48,10 +48,11 @@ impl Kind {
     /// torch's list is every entity that isn't friendly (the monsters); the dread lamp's every
     /// friendly one but the `misc` category (animals, bats, squid, fish, axolotls). The overrides
     /// add to and take from the lists.
+    /// The dread lamp is turned off in this port: it blocks nothing, placed ones included.
     pub fn blocks(self, category: &str, entity: &str, config: &Config) -> bool {
         let (overrides, listed): (&Overrides, bool) = match self {
             Kind::MegaTorch => (&config.mega_overrides, category == "monster"),
-            Kind::DreadLamp => (&config.dread_overrides, category != "monster" && category != "misc"),
+            Kind::DreadLamp => return false,
         };
         if overrides.remove.contains(entity) {
             return false;
@@ -179,9 +180,10 @@ mod tests {
         let c = Config::default();
         assert!(Kind::MegaTorch.blocks("monster", "minecraft:zombie", &c));
         assert!(!Kind::MegaTorch.blocks("creature", "minecraft:pig", &c));
-        assert!(Kind::DreadLamp.blocks("creature", "minecraft:pig", &c));
-        assert!(Kind::DreadLamp.blocks("water_ambient", "minecraft:cod", &c));
-        assert!(Kind::DreadLamp.blocks("ambient", "minecraft:bat", &c));
+        assert!(!Kind::DreadLamp.blocks("creature", "minecraft:pig", &c));
+        // The dread lamp is turned off: it blocks nothing.
+        assert!(!Kind::DreadLamp.blocks("water_ambient", "minecraft:cod", &c));
+        assert!(!Kind::DreadLamp.blocks("ambient", "minecraft:bat", &c));
         assert!(!Kind::DreadLamp.blocks("monster", "minecraft:zombie", &c));
         assert!(!Kind::DreadLamp.blocks("misc", "minecraft:iron_golem", &c));
     }
@@ -203,7 +205,8 @@ mod tests {
         assert!(!s.blocks_spawn(OW, "monster", "minecraft:zombie", [100.5, 60.0, 10.5], &c));
         assert!(!s.blocks_spawn("minecraft:the_nether", "monster", "minecraft:zombie", [0.5, 60.0, 0.5], &c));
         assert!(!s.blocks_spawn(OW, "creature", "minecraft:cow", [0.5, 60.0, 0.5], &c));
+        // A dread lamp, turned off, still lets cows spawn.
         s.add(Kind::DreadLamp, OW, [0, 64, 0]);
-        assert!(s.blocks_spawn(OW, "creature", "minecraft:cow", [0.5, 60.0, 0.5], &c));
+        assert!(!s.blocks_spawn(OW, "creature", "minecraft:cow", [0.5, 60.0, 0.5], &c));
     }
 }

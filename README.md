@@ -10,10 +10,9 @@ A port of [Torchmaster](https://github.com/Xalcon/TorchMaster) by **Xalcon** (MI
 
 - **Mega Torch**: no natural spawns of hostile mobs within 64 blocks in each direction (a cube),
   no phantoms there, no zombie village sieges.
-- **Dread Lamp**: the same for passive mobs (animals, bats, squid, fish, axolotls).
-- **Feral Flare Lantern**: every 5 ticks tries a random spot within 16 blocks; if it is air and its
-  block light is under 10, places an invisible light there (up to 255). Breaking it removes them.
-- **Frozen Pearl**: use it to clear every invisible light within 15 blocks.
+- **Dread Lamp, Feral Flare Lantern and Frozen Pearl: turned off.** No recipes, not in the creative
+  tab. A dread lamp already placed blocks nothing; a lantern places no new lights (breaking it still
+  removes its old ones); a pearl you already have still clears invisible lights within 15 blocks.
 - Right-click a torch or lamp with an empty hand to see its range. Item tooltips as in Torchmaster.
 - Settings: `config/torchmaster-horizon.toml`, Torchmaster's names and defaults, including the
   `+`/`-` entity block list overrides.
@@ -25,9 +24,7 @@ A port of [Torchmaster](https://github.com/Xalcon/TorchMaster) by **Xalcon** (MI
   default), no `/torchmaster` command, no flame particles or waterlogging on the torch and lamp.
 - Every recipe needs four of Arcadian Dream's Max Point Items (`arcadiandream:max_point_item`, the
   corners) and diamonds, around the heart of Torchmaster's recipe:
-  Mega Torch `MTM/DLD/MLM` (torch, logs), Dread Lamp `MOM/DGD/MBM` (obsidian, glowstone, black dye),
-  Feral Flare Lantern `MIM/DgD/MIM` (gold ingots, glowstone dust), Frozen Pearl `MIM/IEI/MDM`
-  (ice or packed ice, ender pearl). Without the `arcadiandream` mod they can't be crafted.
+  Mega Torch `MTM/DLD/MLM` (torch, logs). Without the `arcadiandream` mod it can't be crafted.
 - Phantoms are kept out by refusing a new phantom near a torch, which also stops spawn eggs there.
 - A lantern removed by anything but a player (explosion, piston) leaves its lights; the pearl clears them.
 

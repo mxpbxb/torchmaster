@@ -73,7 +73,7 @@ write(f"{H}/item/frozen_pearl.json", {"template": "minecraft:paper"})
 write(f"{H}/creative_tab/{NS}.json", {
     "title": "Torchmaster",
     "icon": f"{NS}:megatorch",
-    "items": [f"{NS}:megatorch", f"{NS}:dreadlamp", f"{NS}:feral_flare_lantern", f"{NS}:frozen_pearl"],
+    "items": [f"{NS}:megatorch"],  # only the torch: the lamp, lantern and pearl are turned off
 })
 
 # ---- Recipes ----
@@ -89,12 +89,7 @@ def shaped(pattern, key, result):
 
 write(f"data/{NS}/recipe/megatorch.json", shaped(["MTM", "DLD", "MLM"], {
     "T": "minecraft:torch", "L": "#minecraft:logs"}, f"{NS}:megatorch"))
-write(f"data/{NS}/recipe/dreadlamp.json", shaped(["MOM", "DGD", "MBM"], {
-    "O": "minecraft:obsidian", "G": "minecraft:glowstone", "B": "minecraft:black_dye"}, f"{NS}:dreadlamp"))
-write(f"data/{NS}/recipe/feral_flare_lantern.json", shaped(["MIM", "DgD", "MIM"], {
-    "I": "minecraft:gold_ingot", "g": "minecraft:glowstone_dust"}, f"{NS}:feral_flare_lantern"))
-write(f"data/{NS}/recipe/frozen_pearl.json", shaped(["MIM", "IEI", "MDM"], {
-    "E": "minecraft:ender_pearl", "I": ["minecraft:ice", "minecraft:packed_ice"]}, f"{NS}:frozen_pearl"))
+# The Dread Lamp, Feral Flare Lantern and Frozen Pearl are turned off: no recipes for them.
 
 # ---- Loot and tags ----
 for p in sorted((jar / "data" / NS / "loot_table" / "blocks").glob("*.json")):

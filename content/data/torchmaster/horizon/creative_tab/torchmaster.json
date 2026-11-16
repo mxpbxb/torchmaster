@@ -2,9 +2,6 @@
   "title": "Torchmaster",
   "icon": "torchmaster:megatorch",
   "items": [
-    "torchmaster:megatorch",
-    "torchmaster:dreadlamp",
-    "torchmaster:feral_flare_lantern",
-    "torchmaster:frozen_pearl"
+    "torchmaster:megatorch"
   ]
 }

@@ -2,10 +2,9 @@
 //!
 //! - The **Mega Torch** keeps hostile monsters from spawning naturally within 64 blocks of it in
 //!   each direction (a cube), stops phantoms there and village sieges by zombies.
-//! - The **Dread Lamp** does the same for passive mobs: animals, bats, squid, fish, axolotls.
-//! - The **Feral Flare Lantern** places invisible lights in dark places within 16 blocks of it,
-//!   up to 255, and takes them away when it is broken.
-//! - The **Frozen Pearl** clears every invisible light within 15 blocks of the player using it.
+//! - The **Dread Lamp**, **Feral Flare Lantern** and **Frozen Pearl** are turned off: no recipes,
+//!   not in the creative tab. A dread lamp already placed blocks nothing; a lantern places no new
+//!   lights (breaking it still takes its old ones away); a pearl still clears lights.
 //!
 //! The blocks, items, art and recipes are the content mod `torchmaster`. Settings are in
 //! `config/torchmaster-horizon.toml`, with Torchmaster's names and defaults.
@@ -41,6 +40,9 @@ pub const DREADLAMP: &str = "torchmaster:dreadlamp";
 pub const LANTERN: &str = "torchmaster:feral_flare_lantern";
 pub const LIGHT: &str = "torchmaster:invisible_light";
 pub const PEARL: &str = "torchmaster:frozen_pearl";
+/// Whether the Feral Flare Lantern places lights: off, as the Dread Lamp and Frozen Pearl are
+/// (no recipes, not in the creative tab). Only the Mega Torch is in use.
+const LANTERN_ON: bool = false;
 const PHANTOM: &str = "minecraft:phantom";
 /// How far the frozen pearl reaches, in each direction.
 const PEARL_REACH: i32 = 15;
@@ -166,7 +168,9 @@ fn lantern_tick(host: &mut dyn Host, pos: [i32; 3], nbt: &Compound) -> Option<Ve
         }
     }
     let mut next_ticks = ticks;
-    if ticks >= config.flare_tick_rate && lights.len() < config.flare_hardcap {
+    // The lantern is turned off in this port: it places no new lights (its old ones it still keeps
+    // track of, and takes away when it is broken).
+    if LANTERN_ON && ticks >= config.flare_tick_rate && lights.len() < config.flare_hardcap {
         next_ticks = 0;
         let (min_y, height) = host.world_height();
         let target = {
@@ -198,8 +202,8 @@ fn lantern_tick(host: &mut dyn Host, pos: [i32; 3], nbt: &Compound) -> Option<Ve
 fn tooltip_for(item: &str) -> Option<&'static str> {
     Some(match item {
         MEGATORCH => "Prevents natural spawning of hostile monsters in a big radius around the torch",
-        DREADLAMP => "Prevents natural spawning of passive animals like squids, bats or ocelots in a big radius around the lamp",
-        LANTERN => "Places invisible lights",
+        DREADLAMP => "Turned off: does nothing",
+        LANTERN => "Turned off: places no lights",
         PEARL => "Clears residual lights from a Feral Flare Lantern",
         _ => return None,
     })
@@ -358,7 +362,7 @@ impl Hooks for Mod {
         let config = config(host);
         let name = match kind {
             Kind::MegaTorch => "Mega Torch: hostile mobs",
-            Kind::DreadLamp => "Dread Lamp: passive mobs",
+            Kind::DreadLamp => "Dread Lamp (turned off): no",
         };
         let line = format!("{name} don't spawn within {} blocks in each direction", kind.radius(&config));
         host.action_bar(player.uuid, Text::literal(line));

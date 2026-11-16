@@ -1,6 +1,6 @@
 id = "torchmaster"
 name = "Torchmaster by Xalcon (assets)"
-version = "21.1.13-horizon.1"
+version = "21.1.13-horizon.2"
 description = "Horizon port of Torchmaster by Xalcon (MIT): the Mega Torch, Dread Lamp, Feral Flare Lantern and Frozen Pearl, with their art and recipes. Needs torchmaster_native for what they do."
 authors = ["Xalcon (Torchmaster)", "mxpbxb (Horizon port)"]
 api = "0.2"
